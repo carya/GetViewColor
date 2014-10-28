@@ -7,7 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "LightControlPanel.h"
 
+#define SCREEN_WIDTH                [[UIScreen mainScreen] bounds].size.width
 @interface ViewController ()
 
 @end
@@ -16,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    LightControlPanel *lightControlPanel = [[LightControlPanel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-235)/2, CGRectGetHeight(self.view.bounds)-120-235, 235, 235)];
+    [self.view addSubview:lightControlPanel];
 }
 
 - (void)didReceiveMemoryWarning {

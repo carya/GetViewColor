@@ -14,6 +14,11 @@
 		4ACAD63319FFD91600FC6F0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ACAD63219FFD91600FC6F0A /* Images.xcassets */; };
 		4ACAD63619FFD91600FC6F0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ACAD63419FFD91600FC6F0A /* LaunchScreen.xib */; };
 		4ACAD64219FFD91600FC6F0A /* GetViewColorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACAD64119FFD91600FC6F0A /* GetViewColorTests.m */; };
+		4ACAD65119FFD96100FC6F0A /* ColorTempSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACAD64C19FFD96100FC6F0A /* ColorTempSlider.m */; };
+		4ACAD65219FFD96100FC6F0A /* DrawCircus.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACAD64E19FFD96100FC6F0A /* DrawCircus.m */; };
+		4ACAD65319FFD96100FC6F0A /* LightControlPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4ACAD65019FFD96100FC6F0A /* LightControlPanel.m */; };
+		4ACAD65519FFE41300FC6F0A /* bg_color_temp_slider@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACAD65419FFE41300FC6F0A /* bg_color_temp_slider@2x.png */; };
+		4ACAD65719FFE77200FC6F0A /* bg_color_temp_slider_indicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4ACAD65619FFE77200FC6F0A /* bg_color_temp_slider_indicator@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		4ACAD63B19FFD91600FC6F0A /* GetViewColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GetViewColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ACAD64019FFD91600FC6F0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ACAD64119FFD91600FC6F0A /* GetViewColorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetViewColorTests.m; sourceTree = "<group>"; };
+		4ACAD64B19FFD96100FC6F0A /* ColorTempSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorTempSlider.h; sourceTree = "<group>"; };
+		4ACAD64C19FFD96100FC6F0A /* ColorTempSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorTempSlider.m; sourceTree = "<group>"; };
+		4ACAD64D19FFD96100FC6F0A /* DrawCircus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawCircus.h; sourceTree = "<group>"; };
+		4ACAD64E19FFD96100FC6F0A /* DrawCircus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawCircus.m; sourceTree = "<group>"; };
+		4ACAD64F19FFD96100FC6F0A /* LightControlPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LightControlPanel.h; sourceTree = "<group>"; };
+		4ACAD65019FFD96100FC6F0A /* LightControlPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightControlPanel.m; sourceTree = "<group>"; };
+		4ACAD65419FFE41300FC6F0A /* bg_color_temp_slider@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_color_temp_slider@2x.png"; sourceTree = "<group>"; };
+		4ACAD65619FFE77200FC6F0A /* bg_color_temp_slider_indicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_color_temp_slider_indicator@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,14 @@
 		4ACAD62419FFD91600FC6F0A /* GetViewColor */ = {
 			isa = PBXGroup;
 			children = (
+				4ACAD65619FFE77200FC6F0A /* bg_color_temp_slider_indicator@2x.png */,
+				4ACAD65419FFE41300FC6F0A /* bg_color_temp_slider@2x.png */,
+				4ACAD64B19FFD96100FC6F0A /* ColorTempSlider.h */,
+				4ACAD64C19FFD96100FC6F0A /* ColorTempSlider.m */,
+				4ACAD64D19FFD96100FC6F0A /* DrawCircus.h */,
+				4ACAD64E19FFD96100FC6F0A /* DrawCircus.m */,
+				4ACAD64F19FFD96100FC6F0A /* LightControlPanel.h */,
+				4ACAD65019FFD96100FC6F0A /* LightControlPanel.m */,
 				4ACAD62919FFD91600FC6F0A /* AppDelegate.h */,
 				4ACAD62A19FFD91600FC6F0A /* AppDelegate.m */,
 				4ACAD62C19FFD91600FC6F0A /* ViewController.h */,
@@ -201,6 +222,8 @@
 			files = (
 				4ACAD63119FFD91600FC6F0A /* Main.storyboard in Resources */,
 				4ACAD63619FFD91600FC6F0A /* LaunchScreen.xib in Resources */,
+				4ACAD65719FFE77200FC6F0A /* bg_color_temp_slider_indicator@2x.png in Resources */,
+				4ACAD65519FFE41300FC6F0A /* bg_color_temp_slider@2x.png in Resources */,
 				4ACAD63319FFD91600FC6F0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,9 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ACAD65119FFD96100FC6F0A /* ColorTempSlider.m in Sources */,
 				4ACAD62E19FFD91600FC6F0A /* ViewController.m in Sources */,
 				4ACAD62B19FFD91600FC6F0A /* AppDelegate.m in Sources */,
+				4ACAD65219FFD96100FC6F0A /* DrawCircus.m in Sources */,
 				4ACAD62819FFD91600FC6F0A /* main.m in Sources */,
+				4ACAD65319FFD96100FC6F0A /* LightControlPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
