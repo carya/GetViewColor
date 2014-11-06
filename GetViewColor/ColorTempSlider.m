@@ -53,16 +53,7 @@
 -(void)setBackgroundColor:(UIColor *)backgroundColor
 {
     [[self layer] setFillColor:backgroundColor.CGColor];
-    
     [[self layer] setStrokeColor:backgroundColor.CGColor];
-    
-    
-    //    borderView = [[UIView alloc] initWithFrame:self.bounds];
-    //    [borderView setUserInteractionEnabled:NO];
-    //    CAShapeLayer *shapeLayer = [borderView CAShapeLayerFromPoints:[self convertFramePointsToBounds:_arrayTouchPoints]];
-    //    [shapeLayer setFillColor:[UIColor clearColor].CGColor];
-    //    [shapeLayer setStrokeColor:[UIColor redColor].CGColor];
-    //    [shapeLayer setLineWidth:1.0];
 }
 
 -(UIColor *)backgroundColor

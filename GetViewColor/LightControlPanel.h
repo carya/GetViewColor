@@ -15,8 +15,5 @@
 @property (nonatomic, strong) ColorTempSlider *cts;
 
 - (void)renderColorTempSlider;
-- (UIColor *)colorOfPoint:(CGPoint)point;
 
-
-- (void)setColorTempSliderValueChangedBlock:(void(^)(UIColor *color))colorTempSliderValueChanged;
 @end

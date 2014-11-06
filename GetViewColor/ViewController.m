@@ -19,8 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    LightControlPanel *lightControlPanel = [[LightControlPanel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-235)/2, CGRectGetHeight(self.view.bounds)-120-235, 235, 235)];
+    LightControlPanel *lightControlPanel = [[LightControlPanel alloc] initWithFrame:CGRectMake((SCREEN_WIDTH-235)/2, CGRectGetHeight(self.view.bounds)- 120 -235, 235, 235)];
     [self.view addSubview:lightControlPanel];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

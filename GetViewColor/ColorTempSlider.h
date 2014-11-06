@@ -22,6 +22,4 @@
                  endAngle:(CGFloat)endAngle;
 
 - (CAShapeLayer*)layer;
-
-- (void)renderGradientLayer;
 @end

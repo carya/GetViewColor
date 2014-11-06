@@ -36,20 +36,18 @@
 
 - (void)renderColorTempSlider
 {
-    CGRect boundsRect = self.frame;
+    CGRect boundsRect = self.bounds;
     CGPoint centerPoint = CGPointMake(CGRectGetMidX(boundsRect), CGRectGetMidY(boundsRect));
     CGFloat outerRadius = CGRectGetWidth(boundsRect)/2;
     _cts = [[ColorTempSlider alloc] initWithCenterPoint:centerPoint innerRadius:(outerRadius-kCircusWidth) outerRadius:outerRadius startAngle:90 endAngle:450];
-    CGRect ctsFrame = _cts.frame;
-    ctsFrame.origin.x = ctsFrame.origin.x - self.frame.origin.x;
-    ctsFrame.origin.y = ctsFrame.origin.y - self.frame.origin.y;
-    _cts.frame = ctsFrame;
     
     [self addSubview:_cts];
     
     __weak LightControlPanel *weakSelf = self;
     _cts.valueChanged = ^ (UIColor *color) {
-        CGPoint point = CGPointMake(CGRectGetWidth(weakSelf.bounds)/2, 42);
+        CGPoint point = CGPointMake(CGRectGetWidth(weakSelf.bounds)/2, 21);
+        NSLog(@"color of point.x: %f, y: %f", point.x, point.y);
+        NSLog(@"light control panel. origin.x: %f, y: %f, width: %f, height:%f", weakSelf.frame.origin.x, weakSelf.frame.origin.y, weakSelf.frame.size.width, weakSelf.frame.size.height);
         UIColor *colorOfPoint = [weakSelf colorOfPoint:point];
         weakSelf.superview.backgroundColor = colorOfPoint;
     };
@@ -85,10 +83,5 @@
     return color;
 }
 
-
-- (void)setColorTempSliderValueChangedBlock:(void (^)(UIColor *))colorTempSliderValueChanged
-{
-    _cts.valueChanged = colorTempSliderValueChanged;
-}
 
 @end
